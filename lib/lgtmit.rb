@@ -1,14 +1,8 @@
 require "lgtmit/version"
+require "lgtmit/compositer"
 require "mini_magick"
 
 module Lgtmit
-  POS = "0, 0"
-  TEXT = "LGTM"
-  COLOR = "#ffffff"
-  GRAV = "center"
-  FMT = "png"
-  P_SCALE = 3
-
   def self.run(file_name)
     image = MiniMagick::Image.open(file_name)
 
