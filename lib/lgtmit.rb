@@ -1,5 +1,6 @@
 require "lgtmit/version"
 require "lgtmit/compositer"
+require "lgtmit/cli"
 require "mini_magick"
 
 module Lgtmit
