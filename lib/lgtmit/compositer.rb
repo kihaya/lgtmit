@@ -1,5 +1,7 @@
 module Lgtmit
   class Compositer
+    require "pathname"
+
     attr_accessor :file_name, :image
 
     POS = "0, 0"
@@ -23,7 +25,7 @@ module Lgtmit
       end
 
       @image.format FMT
-      @image.write "#{TEXT}_#{@file_name}"
+      @image.write "#{TEXT}_#{Pathname.new(file_name).basename.to_s}"
     end
 
     private
