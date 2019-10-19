@@ -6,7 +6,7 @@ module Lgtmit
 
     desc "make file_name", "Put LGTM label on photo"
     def make(file_name)
-      puts "hello, thor"
+      Compositer.new(file_name).run
     end
   end
 end
