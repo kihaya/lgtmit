@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require "lgtmit/version"
 require "lgtmit/compositer"
 require "lgtmit/cli"

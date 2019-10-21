@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Lgtmit
   class Compositer
     require "pathname"
@@ -23,17 +24,17 @@ module Lgtmit
 
     def configure_image!
       @image.combine_options do |config|
-        config.fill COLOR
-        config.gravity GRAV
-        config.pointsize p_size_calc
-        config.draw "text #{POS} '#{TEXT}'"
+        config.fill(COLOR)
+        config.gravity(GRAV)
+        config.pointsize(p_size_calc)
+        config.draw("text #{POS} '#{TEXT}'")
       end
-      @image.format FMT
+      @image.format(FMT)
       @image
     end
 
     def write_image!
-      @image.write "#{TEXT}_#{Pathname.new(file_name).basename.to_s}"
+      @image.write("#{TEXT}_#{Pathname.new(file_name).basename}")
     end
 
     private
