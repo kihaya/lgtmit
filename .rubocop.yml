@@ -1,6 +1,11 @@
 AllCops:
   Exclude:
   - 'db/schema.rb'
+  - 'bin/*'
+  - 'exe/*'
+  - 'Gemfile'
+  - 'Rakefile'
+  - '*.gemspec'
   DisabledByDefault: true
   StyleGuideBaseURL: https://shopify.github.io/ruby-style-guide/
 
